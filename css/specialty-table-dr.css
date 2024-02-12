@@ -1,0 +1,85 @@
+:root{
+    --dark-color:#168a7f;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Lemonada', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+.main-title::after{
+    content: '';
+    width: 170px;
+    height: 3px;
+    background-color: var(--dark-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Start Specialties */
+.Specialties .card-img-top svg,
+.Specialties .card-img-top .svg{
+    width: 50px;
+    height: 50px;
+    color: var(--dark-color);
+}
+.Specialties .card-btn{
+    background-color: var(--dark-color);
+    border: 2px solid var(--dark-color);
+    padding: 0.5rem 2rem;
+    color: white;
+}
+.Specialties .card-btn:hover{
+    background-color: transparent;
+    color: var(--dark-color);
+    border: 2px solid var(--dark-color);
+}
+/* End Specialties */
+
+/* start doctors */
+.doctors .card-link{
+    text-decoration: none;
+}
+.doctors .Specialty{
+    color: var(--dark-color);
+    font-weight: 500;
+}
+.doctors .card svg{
+    color: var(--dark-color);
+}
+.doctors .card-footer{
+    background-color: var(--dark-color);
+}
+/* end doctors */
+
+/* start table */
+.table .table-head{
+    color: var(--dark-color);
+}
+.table tbody .action{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.table tbody .done{
+    background: #73f973;
+    padding: 5px;
+    border-radius: 50%;
+    transition: .2s all ease-in-out;
+}
+.table tbody .done:hover{
+    background: #3cca3c;
+}
+.table tbody .false{
+    background: #f97373;
+    padding: 5px;
+    border-radius: 50%;
+    transition: .2s all ease-in-out;
+}
+.table tbody .false:hover{
+    background: #d86262;
+}
+/* end table */
+
+

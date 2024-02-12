@@ -1,0 +1,167 @@
+/*Global variable*/
+
+* {
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif; 
+}
+:root{
+    --main-color:#168a7f;
+    --hover-color:#156863;
+}
+/*Global variable*/
+/* doctor sign up */
+.wrapper {
+    background-color: white;
+    padding: 4em 20px 2em 20px;
+}
+.wrapper .logo img{
+    width: 200px;
+    height: 100px;
+}
+.min-div{
+    width: 1000px;
+    height: fit-content;
+    background-color: #fff;
+    box-shadow: 0px -1px 10px 1px rgb(0 0 0 / 10%);
+    position: relative;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.min-div::before{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    right: 0;
+    bottom: 0;
+    background-color: #168a7f5e;
+    border-radius: 0px 0px 30px 0px;
+    clip-path: circle(70% at 100% 100%);
+    
+}
+.min-div::after{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    left: 0;
+    top: 0;
+    background-color: #168a7f5e;
+    clip-path: circle(70% at 3% 3%);
+    border-radius:30px 0 0 0 ;
+    -webkit-border-radius:30px 0 0 0 ;
+    -moz-border-radius:30px 0 0 0 ;
+    -ms-border-radius:30px 0 0 0 ;
+    -o-border-radius:30px 0 0 0 ;
+}
+@media (max-width: 660px){
+    .min-div::after{
+        clip-path: circle(60% at 3% 3%);
+    }
+    .min-div::before{
+        clip-path: circle(60% at 100% 100%);
+    }
+}
+@media (max-width: 500px){
+    .min-div::after{
+        clip-path: circle(45% at 3% 3%);
+    }
+    .min-div::before{
+        clip-path: circle(45% at 100% 100%);
+    }
+}
+
+.head{
+    padding: 10px 0 0 0 ;
+    max-height: 150px;
+}
+.head h1{
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 41px;
+    margin: 15px;
+}
+.head p{
+    color: #b8bbbb;
+    font-size: 20px;
+    margin: -5px 0 0 0;
+}
+.form-container{
+    padding: 40px 60px 0px 60px;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #e5f5f300;
+    outline: 0;
+    box-shadow: 0px 0px 0 1.5px #1a817830;
+}
+.form-container label{
+    font-size: 18px;
+    color: gray;
+    padding: 0 0 0 5px;
+}
+.next-but button,
+.submit-btn button{
+    padding: 15px;
+    border-radius: 20px;
+    width: 103px;
+    border: none;
+    color: white;
+    background: var(--main-color);
+    margin-bottom: 10px;
+}
+.next-but button:hover,
+.submit-btn button:hover{
+    background-color: var(--hover-color);
+}
+.next-but ,
+.submit-btn{
+    color: #b8bbbb;
+    font-size: 18px;
+    margin-top: 40px;
+}
+.next-but p{
+    color: #b8bbbb;
+    font-size: 18px;
+}
+.next-but p a,
+.submit-btn p a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: 600;
+}
+.next-but p a:hover,
+.submit-btn p a:hover{
+    color: var(--hover-color);
+}
+.dropdown {
+    width: fit-content;
+}
+.dropdown .btn-next {
+    border: transparent;
+}
+.check-box .check{
+    margin-top: -5px;
+}
+.check-box p{
+    font-size: 18px;
+    color: gray;
+    padding: 0 0 0 5px;
+}
+.check-box label{
+    margin-right: 25px;
+}
+#birthDate{
+    width: 287px;
+}
+/*end signUp patient*/

@@ -1,0 +1,133 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table | My Doctor</title>
+        <!-- bootstrap css file -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- font awesome -->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Icon -->
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <!-- css file -->
+        <link rel="stylesheet" href="css/specialty-table-dr.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Lemonada:wght@300&family=Work+Sans:wght@100;300;600&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark active" id="nav" >
+        <div class="container-fluid" style="flex-direction: row-reverse;">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo-w.png" alt="" srcset="">
+        </a>
+        <button class="navbar-toggler" style="border: 0; color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <label class="hamburger">
+                <input type="checkbox">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </button>
+            <div class="collapse navbar-collapse active" id="navbarSupportedContent" >
+                <ul class="navbar-nav ml-auto " >
+                    <li class="nav-item">
+                        <a  href="signUpPatient.html"> 
+                            <button class="login-btn">
+                                <p>دخول &nbsp; <i class="fa-solid fa-right-to-bracket"></i></p>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signUpDoctor.html">تسجيل دكتور</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="table.html">جدول المواعيد</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#contact"  >أتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="health_tips.html" >أرشادات طبية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="specialty.html">التخصصات الطبية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" >الصفحة الرئيسية</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Start Table -->
+    <div class="Table my-5">
+        <div class="container">
+            <div class="main-title position-relative">
+                <h1 class=" text-center fw-bold">Booking Dates</h1>
+            </div>
+            <table class="table table-striped mt-5 text-center">
+                <thead>
+                    <tr class="table-head">
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Specialty</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Time</th>
+                        <th scope="col">Confirmation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- start repeated row -->
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Ahmed said</td>
+                        <td>Dentist</td>
+                        <td>15 - 3 - 2024</td>
+                        <td>03:00</td>
+                        <td class="action">
+                            <a href="#" class="done"><i class="fa-solid fa-check text-success"></i></a>
+                            <a href="#" class="false"><i class="fa-solid fa-xmark text-danger"></i></a>
+                        </td>
+                    </tr>
+                    <!-- end repeated row -->
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Ahmed</td>
+                        <td>Dentist</td>
+                        <td>15 - 3 - 2024</td>
+                        <td>03:00</td>
+                        <td class="action">
+                            <a href="#" class="done"><i class="fa-solid fa-check text-success"></i></a>
+                            <a href="#" class="false"><i class="fa-solid fa-xmark text-danger"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Ahmed</td>
+                        <td>Dentist</td>
+                        <td>15 - 3 - 2024</td>
+                        <td>03:00</td>
+                        <td class="action">
+                            <a href="#" class="done"><i class="fa-solid fa-check text-success"></i></a>
+                            <a href="#" class="false"><i class="fa-solid fa-xmark text-danger"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- End Table -->
+
+    <!-- js file -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Doctors | My Doctor</title>
+        <!-- bootstrap css file -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- font awesome -->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Icon -->
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+        <!-- css file -->
+        <link rel="stylesheet" href="css/specialty-table-dr.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Lemonada:wght@300&family=Work+Sans:wght@100;300;600&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark active" id="nav" >
+        <div class="container-fluid" style="flex-direction: row-reverse;">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo-w.png" alt="" srcset="">
+        </a>
+        <button class="navbar-toggler" style="border: 0; color: transparent;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <label class="hamburger">
+                <input type="checkbox">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </button>
+            <div class="collapse navbar-collapse active" id="navbarSupportedContent" >
+                <ul class="navbar-nav ml-auto " >
+                    <li class="nav-item">
+                        <a  href="signUpPatient.html"> 
+                            <button class="login-btn">
+                                <p>دخول &nbsp; <i class="fa-solid fa-right-to-bracket"></i></p>
+                            </button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signUpDoctor.html">تسجيل دكتور</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="table.html">جدول المواعيد</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#contact"  >أتصل بنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="health_tips.html" >أرشادات طبية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="specialty.html">التخصصات الطبية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" >الصفحة الرئيسية</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- start doctors -->
+    <div class="doctors my-5">
+        <div class="container">
+            <!-- main title -->
+            <div class="main-title position-relative">
+                <h1 class="text-center fw-bold">Our Doctors</h1>
+            </div>
+            <!-- body -->
+            <div class="row my-5">
+                <!--start repeated col -->
+                <div class="col-lg-3 mt-2">
+                    <a href="" class="card-link link-dark">
+                        <div class="card shadow-sm">
+                            <img alt="doctor" src="img/doctor-pic.jpg" class="card-img-top img-fluid rounded p-1">
+                            <div class="card-body ">
+                                    <h5 class="card-title fw-semibold">Dr. <span>Ahmed</span></h5>
+                                    <p class="card-text Specialty mb-1 fw-semibold">Dentist</p>
+                                    <p class="card-text text-black-50 mb-1">This content is a little bit longer.</p>
+                                    <p class="card-text mb-1">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="address">address</span> 
+                                    </p>
+                                    <p class="card-text">
+                                        <i class="fa-solid fa-dollar-sign"></i>
+                                        <span class="price">500</span>
+                                    </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="doctor_profile.html" class="btn text-light">حجز موعد</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!--end repeated col -->
+                <div class="col-lg-3 mt-2">
+                    <a href="" class="card-link link-dark">
+                        <div class="card shadow-sm">
+                            <img alt="doctor" src="img/doctor-pic.jpg" class="card-img-top img-fluid rounded p-1">
+                            <div class="card-body ">
+                                    <h5 class="card-title fw-semibold">Dr. <span>Ahmed</span></h5>
+                                    <p class="card-text Specialty mb-1 fw-semibold">Dentist</p>
+                                    <p class="card-text text-black-50 mb-1">This content is a little bit longer.</p>
+                                    <p class="card-text mb-1">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="address">address</span> 
+                                    </p>
+                                    <p class="card-text">
+                                        <i class="fa-solid fa-dollar-sign"></i>
+                                        <span class="price">500</span>
+                                    </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="doctor_profile.html" class="btn text-light">حجز موعد</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-2">
+                    <a href="" class="card-link link-dark">
+                        <div class="card shadow-sm">
+                            <img alt="doctor" src="img/doctor-pic.jpg" class="card-img-top img-fluid rounded p-1">
+                            <div class="card-body ">
+                                    <h5 class="card-title fw-semibold">Dr. <span>Ahmed</span></h5>
+                                    <p class="card-text Specialty mb-1 fw-semibold">Dentist</p>
+                                    <p class="card-text text-black-50 mb-1">This content is a little bit longer.</p>
+                                    <p class="card-text mb-1">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="address">address</span> 
+                                    </p>
+                                    <p class="card-text">
+                                        <i class="fa-solid fa-dollar-sign"></i>
+                                        <span class="price">500</span>
+                                    </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="doctor_profile.html" class="btn text-light">حجز موعد</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 mt-2">
+                    <a href="" class="card-link link-dark">
+                        <div class="card shadow-sm">
+                            <img alt="doctor" src="img/doctor-pic.jpg" class="card-img-top img-fluid rounded p-1">
+                            <div class="card-body ">
+                                    <h5 class="card-title fw-semibold">Dr. <span>Ahmed</span></h5>
+                                    <p class="card-text Specialty mb-1 fw-semibold">Dentist</p>
+                                    <p class="card-text text-black-50 mb-1">This content is a little bit longer.</p>
+                                    <p class="card-text mb-1">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        <span class="address">address</span> 
+                                    </p>
+                                    <p class="card-text">
+                                        <i class="fa-solid fa-dollar-sign"></i>
+                                        <span class="price">500</span>
+                                    </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="doctor_profile.html" class="btn text-light">حجز موعد</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end doctor -->
+
+    <!-- js file -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
