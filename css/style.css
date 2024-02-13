@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     font-family: 'Cairo', sans-serif;
-    /* cursor: url('https://img.icons8.com/fluency/48/000000/3d-pointer--v1.png'), auto; */
 }
 
 
@@ -30,13 +29,8 @@
 }
 /* Search */
 .search-container {
-  /* position: absolute;  */
-    /* top: 50%; */
     left: 50%;
-    /* transform: translate(-50%, -50%); */
     width: 30em;
-    /* direction: ltr; */
-    /* display: flex; */
     float: right;
     direction: rtl;
 }
@@ -100,7 +94,6 @@
 
 
 
-
 /* home */
 .header{
     background:linear-gradient(to top, rgb(0,0,0,0.5)70%, rgb(0,0,0,0.5)30%),url(../img/background.jpg);
@@ -109,7 +102,6 @@
     width: 100%;
     height: 40em;
     background-size: cover;
-    /* background-position: center; */
 }
 /* Scroll Down */
 .scroll-down{
@@ -228,7 +220,6 @@
 .about-title{
     font-size: 22px;
     line-height: 31px;
-    /* margin-top: -2.3em; */
     color: #1c1c1c;
     font-family: monospace;
     font-weight: 600;
@@ -264,7 +255,6 @@
   opacity: 0;
   transition: 0.5s;
   height: 1em;
-  /* fill: #fff; */
   color: #fff;
 }
 
@@ -309,19 +299,14 @@
     direction: ltr;
 }
 #about img{
-	/* width: 370px; */
   width: 300px;
   border-radius: 10px;
   box-shadow: -20px 11px 0px 3px #168a7f;
 }
 
 
-
-
-
   /* Section Card */
   #page{
-    /* background-image: url(https://img.freepik.com/free-vector/clean-medical-background_53876-116864.jpg?w=740&t=st=1707427412~exp=1707428012~hmac=400c246d54a9b914084d2ca4bbacb26a9bf4cb8a05f3a460a54e4900b7ebf5e0); */
     background-image: url(../img/background2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -371,36 +356,7 @@
   }
 
 
-
-  /* video-action */
-.video-action{
-    padding: 70px;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEUpHXYpuhrtr4JZKrRHP7zneX2ZS9knHfnA&usqp=CAU);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-.video-action h1{
-    color: #a82d49;
-    padding-top: 20px;
-}
-.video-action p{
-    color: #000;
-}
-.video-action .swipebox-video{
-    color: #000;
-}
-.video-action .swipebox-video:hover{
-    color: #a82d49;
-    text-decoration: none;
-    transition: all .3s;
-}
-
-
 /* Contact Form */
-
-
 #contact {
   text-align: -webkit-center;
   margin: 10em 0;
@@ -419,8 +375,6 @@
   width: 50%;
   padding: 8% 5% 10% 5%;
 }
-
-
 .contact-links {
   background-color: #1c5553;
   background:
@@ -504,22 +458,11 @@
 .contact-box .form-item {
   position: relative;
 }
-
-
-
 .contact-form-wrapper {
-    /* width: 400px; */
-    /* background: linear-gradient(#212121, #212121) padding-box, linear-gradient(145deg, transparent 35%,#e81cff, #40c9ff) border-box; */
     border: 2px solid transparent;
     padding: 32px 24px;
-    /* font-size: 14px; */
-    /* font-family: inherit; */
     color: white;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* gap: 20px; */
     box-sizing: border-box;
-    /* border-radius: 16px; */
 }
 
 .contact-form-wrapper button:active {
