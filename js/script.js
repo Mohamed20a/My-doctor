@@ -1,26 +1,21 @@
+// Loading Screen
 document.addEventListener("DOMContentLoaded", function() {
-  // Display the loading screen
+
   document.getElementById('loading-screen').style.display = 'flex';
 
-    // Simulate some loading process
-    setTimeout(function(){
-        // Hide the loading screen
+    setTimeout(function(){  
         document.getElementById('loading-screen').style.display = 'none';
 
-        // Show the content
         document.getElementById('content').style.display = 'block';
-    }, 3000); // Change the time according to your loading time
+    })
 });
 
-
+// Reset Btn Form
 function resetForm() {
     document.getElementById("form").reset();
 }
 
 
-
-
-// Navbar
 // Search Input
 
 let choices = [
