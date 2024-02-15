@@ -198,7 +198,7 @@
 	padding: 10em 0;
 	direction: rtl;
 }
-.sentence-container {
+/* .sentence-container {
   display: grid;
   grid-template-columns: 100px auto 100px;
   justify-content: center;
@@ -211,11 +211,28 @@
   margin-right: 1em;
 }
 .title-section{
-  color: #10a37f;
+    color: #10a37f;
     font-family: elmessiri-bold;
     margin-right: 20px;
     font-size: calc(2.325rem + 0.9vw);
+} */
+
+/* added part */
+.main-title{
+  margin-bottom:2rem ;
+  font-weight: bold;
 }
+.main-title::after{
+  content: '';
+  width: 170px;
+  height: 3px;
+  background-color:#168a7f;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* end added part */
 
 .about-title{
     font-size: 22px;
