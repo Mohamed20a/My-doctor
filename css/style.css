@@ -195,7 +195,7 @@
 /* About Section */
 #about{
 	align-items: center;
-	padding: 10em 0;
+	padding: 8em 0;
 	direction: rtl;
 }
 /* .sentence-container {
@@ -376,7 +376,7 @@
 /* Contact Form */
 #contact {
   text-align: -webkit-center;
-  margin: 10em 0;
+  margin: 8em 0;
 }
 
 .contact-box {
@@ -455,7 +455,7 @@
   width: 60%;
 }
 .contact-box img {
-  width: 55px;
+  width: 40px;
   height: 55px;
   transition: 0.2s;
 }
@@ -478,7 +478,6 @@
 .contact-form-wrapper {
     border: 2px solid transparent;
     padding: 32px 24px;
-    color: white;
     box-sizing: border-box;
 }
 
@@ -560,7 +559,13 @@
   gap: 8px;
   margin-top: 8px;
   cursor: pointer;
-  border-radius: 6px;
+  border: 1px solid transparent;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+
 }
 .contact-form-wrapper .form-submit-btn {
   color: #fff;
