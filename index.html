@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/login.css">
     <!-- Font awesome -->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=dubai-medium,bahij" />
@@ -208,10 +209,9 @@
 
     <!-- Contact Form -->
     <section id="contact">
-    <div class="max-w-3xl mx-auto mb-16 text-center ">
-        <h2 class="mt-8 mb-10 title-section">Contact Form</h2>
-        <p class="lead text-muted">We'd love to hear from you!</p>
-    </div>
+        <div class="main-title position-relative">
+            <h2 class="text-center fw-bold">تواصل معنا</h2>
+        </div>
     <div class="contact-box">
         <div class="contact-links">
             <div class="div-img">
@@ -219,36 +219,36 @@
             </div>
             <div class="links">
                 <div class="link">
-                    <a><img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="facebook-new"/></a>
+                    <a><img src="img/facebook.svg" alt="facebook-new"/></a>
                 </div>
                 <div class="link">
-                    <a><img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a>
+                    <a><img src="img/instagram.svg" alt="instagram-new"/></a>
                 </div>
                 <div class="link">
-                    <a><img src="https://img.icons8.com/ios/50/twitterx--v1.png" alt="twitterx--v1"/></a>
+                    <a><img src="img/twitter.svg" alt="twitterx--v1"/></a>
                 </div>
                 <div class="link">
-                    <a><img src="https://img.icons8.com/color/48/circled-envelope.png" alt="circled-envelope"/></a>
+                    <a><img src="img/email.svg" alt="circled-envelope"/></a>
                 </div>
             </div>
         </div>
-        <div class="contact-form-wrapper">
-            <form class="form" id="form" method="get">
-                <div class="form-group">
-                    <label for="text">Your Name:</label>
-                    <input type="text" id="text" name="text" required="">
+        <div class="contact-form-wrapper wrapper">
+            <form class="row g-3">
+                <div class="col-md-12">
+                    <label for="text" class="form-label d-flex justify-content-end">اسمك</label>
+                    <input class="form-control" type="text" id="text">
                 </div>
-                <div class="form-group">
-                    <label for="email">Your Email:</label>
-                    <input type="text" id="email" name="email" required="">
+                <div class= "mb-3">
+                    <label for="email" class="form-label d-flex justify-content-end" > بريدك الإلكتروني</label>
+                    <input class="form-control" type="email" id="email">
                 </div>
-                <div class="form-group">
-                    <label for="textarea">How Can We Help You?</label>
-                    <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
+                <div class= "mb-3">
+                    <label for="textarea" class="form-label d-flex justify-content-end">كيف يمكننا مساعدتك</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="50"></textarea>
                 </div>
                 <div class="btn-form">
-                    <button class="form-submit-btn" type="submit">Send &nbsp; <i id="send-icon" class="fa-solid fa-paper-plane"></i></button>
-                    <button class="form-reset-btn btn btn-danger" onclick="resetForm()">Reset form</button>
+                    <button class="form-reset-btn btn btn-danger" onclick="resetForm()">اعاده تعبئه</button>
+                    <button class="form-submit-btn" type="submit">ارسال &nbsp; <i id="send-icon" class="fa-solid fa-paper-plane"></i></button>
                 </div>
             </form>
         </div>
