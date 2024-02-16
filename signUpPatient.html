@@ -73,50 +73,54 @@
     <div class="wrapper"> 
         <!-- main title -->
         <div class="main-title position-relative">
-            <h1 class="text-center fw-bold">Patient Registration</h1>
+            <h1 class="text-center fw-bold">تسجيل المريض</h1>
         </div>
         <div class="container d-flex justify-content-center align-items-center mt-5 main-div">
             <div class="min-div">
                 <div class="head text-center">
-                    <h1> Sign-UP</h1>
-                    <p> Patient Account Information  </p>
+                    <h1> تسجيل </h1>
+                    <p> حساب المريض الشخصي  </p>
                 </div>
                 <div class="form-container">
                     <form class="row g-3">
                         <div class="col-md-12">
-                            <label for="FirstName" class="form-label">Name</label>
+                            <label for="FirstName" class="form-label">الاسم</label>
                             <input type="FirstName" class="form-control" id="FirstName">
                         </div>
                         <div class="col-md-12">
-                            <label for="formMobile" class="form-label">Mobile Number</label>
+                            <label for="formMobile" class="form-label">رقم الموبايل</label>
                             <input class="form-control" type="tel" id="formMobile" placeholder="010 0000 0000">
                         </div>
                         <div class="col-md-12">
-                            <label for="inputEmail4" class="form-label">Email</label>
+                            <label for="inputEmail4" class="form-label">البريد الإلكتروني</label>
                             <input type="email" class="form-control" id="inputEmail4">
                         </div>
                         <div class="col-md-12">
-                            <label for="inputPassword4" class="form-label">Password</label>
+                            <label for="inputPassword4" class="form-label">كلمه المرور</label>
                             <input type="password" class="form-control" id="inputPassword4">
                         </div>
                         <div class="row g-3">
                             <div class="col-md-6">
-                                <label for="birthday">Birth Date :</label>
-                                <input type="date" id="birthDate" class="form-control" name="birthday" value=" yyyy-MM-dd">
+                                <label style=font-weight:bold; for="birthday">تاريخ الميلاد</label>
+                                <input type="date" id="birthDate" class="form-control" name="birthday">
                             </div>
-                            <div class="col-md-6 check-box mt-4">
-                                <p>Gender :</p>
-                                <div class="check">
-                                        <input type="radio" id="html" name="fav_language" value="HTML">
-                                        <label for="html">Male</label>
-                                        <input type="radio" id="css" name="fav_language" value="CSS">
-                                        <label for="css">Female</label><br>
+                            <div class="col-md-6 check-box mt-4 "dir="rtl">
+                                <p style=font-weight:bold; >النوع</p>
+                                <div class="check d-flex">
+                                    
+                                        
+                                        <input type="radio" id="Gender1" name="Gender" >
+                                        <label for="Gender1">ذكر</label>
+                                    
+                                    
+                                        <input type="radio" id="Gender2" name="Gender" class="mr-4"><label for="Gender2">انثي</label>
+                                    
                                 </div>
                             </div>
                         </div>
                         <div class= "mb-3 submit-btn text-center">
-                            <a href=""></a><button > Submit </button>
-                            <p>Don't have an account? <span><a href="./logInPatient.html"> LogIn</a></span></p>
+                            <a href=""></a><button > تسجيل </button>
+                            <p>هل لديك حساب؟ <span><a href="./logInPatient.html"> تسجيل</a></span></p>
                         </div>
                         
                     </form>
