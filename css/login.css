@@ -14,6 +14,21 @@ body {
     --hover-color:#156863;
 }
 /*Global variable*/
+/* dirctions */
+label{
+    display: flex;
+    justify-content: end;
+}
+input {
+    direction: rtl;
+}
+select {
+    direction: rtl;
+}
+textarea {
+    direction: rtl;
+}
+/* end dirctions */
 /* doctor sign up */
 .wrapper {
     background-color: white;
@@ -35,18 +50,7 @@ body {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
 }
-.min-div::before{
-    content: "";
-    position: absolute;
-    width: 30%;
-    height: 30%;
-    right: 0;
-    bottom: 0;
-    background-color: #168a7f5e;
-    border-radius: 0px 0px 30px 0px;
-    clip-path: circle(70% at 100% 100%);
-    
-}
+
 .min-div::after{
     content: "";
     position: absolute;
@@ -66,17 +70,13 @@ body {
     .min-div::after{
         clip-path: circle(60% at 3% 3%);
     }
-    .min-div::before{
-        clip-path: circle(60% at 100% 100%);
-    }
+    
 }
 @media (max-width: 500px){
     .min-div::after{
         clip-path: circle(45% at 3% 3%);
     }
-    .min-div::before{
-        clip-path: circle(45% at 100% 100%);
-    }
+    
 }
 
 .head{
@@ -145,7 +145,11 @@ body {
     color: var(--hover-color);
 }
 .dropdown {
-    width: fit-content;
+    
+    direction: rtl;
+}
+.dropdown button{
+    border: transparent;
 }
 .dropdown .btn-next {
     border: transparent;
@@ -157,11 +161,11 @@ body {
     font-size: 18px;
     color: gray;
     padding: 0 0 0 5px;
+    direction: rtl;
 }
 .check-box label{
-    margin-right: 25px;
+    margin-left: 30px;
+    padding-right: 5px;
 }
-#birthDate{
-    width: 287px;
-}
+
 /*end signUp patient*/

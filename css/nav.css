@@ -85,16 +85,14 @@
     align-items: center;
     position: relative;
     padding: 12px 2em;
-    border: mediumspringgreen solid 0.15em;
-    border-radius: 0.25em;
-    color: mediumspringgreen;
+    border-radius: 30px;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
     overflow: hidden;
     transition: border 300ms, color 300ms;
-    box-shadow: 0 0 10px #34dbd2;
-    
+    background-color: white;
+    color: #168a7f;
 }
 
 .navbar-nav .nav-item .login-btn p {
@@ -109,7 +107,9 @@
     background-color: #34dbd2;
     color: #fff;
 }
-
+.navbar-nav .nav-item a{
+    text-decoration: none;
+}
 /* .navbar-nav .nav-item .login-btn:active {
     border-color: teal;
 }

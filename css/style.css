@@ -96,7 +96,7 @@
 
 /* home */
 .header{
-    background:linear-gradient(to top, rgb(0,0,0,0.5)70%, rgb(0,0,0,0.5)30%),url(../img/background.jpg);
+    background:linear-gradient(to top, rgb(0 0 0 / 20%)70%, rgb(0 0 0 / 20%)30%),url(../img/navBackground.png);
     box-sizing: border-box;
     scroll-behavior: smooth;
     width: 100%;
