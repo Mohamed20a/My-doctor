@@ -15,10 +15,7 @@ body {
 }
 /*Global variable*/
 /* dirctions */
-label{
-    display: flex;
-    justify-content: end;
-}
+
 input {
     direction: rtl;
 }
@@ -78,7 +75,6 @@ textarea {
     }
     
 }
-
 .head{
     padding: 10px 0 0 0 ;
     max-height: 150px;
@@ -145,8 +141,11 @@ textarea {
     color: var(--hover-color);
 }
 .dropdown {
-    
     direction: rtl;
+    height: 38.1px;
+    align-items: center;
+    display: flex;
+    width: fit-content;
 }
 .dropdown button{
     border: transparent;
