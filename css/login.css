@@ -75,6 +75,7 @@ textarea {
     }
     
 }
+
 .head{
     padding: 10px 0 0 0 ;
     max-height: 150px;
@@ -84,6 +85,10 @@ textarea {
     font-weight: bold;
     font-size: 41px;
     margin: 15px;
+}
+.star::after{
+    content: "*";
+    color: red;
 }
 .head p{
     color: #b8bbbb;
@@ -105,6 +110,7 @@ textarea {
     color: gray;
     padding: 0 0 0 5px;
 }
+
 .next-but button,
 .submit-btn button{
     padding: 15px;
@@ -145,7 +151,6 @@ textarea {
     height: 38.1px;
     align-items: center;
     display: flex;
-    width: fit-content;
 }
 .dropdown button{
     border: transparent;
