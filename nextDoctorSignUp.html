@@ -21,7 +21,7 @@
 </head>
 <body> 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark active" id="nav" >
+    <nav class="navbar navbar-expand-lg navbar-dark active" id="nav" style="direction: ltr;" >
         <div class="container-fluid" style="flex-direction: row-reverse;">
         <a class="navbar-brand" href="#">
             <img src="img/logo-w.png" alt="" srcset="">
@@ -35,7 +35,7 @@
                 </svg>
             </label>
         </button>
-            <div class="collapse navbar-collapse active" id="navbarSupportedContent" >
+            <div class="collapse navbar-collapse active" id="navbarSupportedContent"  >
                 <ul class="navbar-nav ml-auto " >
                     <li class="nav-item">
                         <a href="signUpPatient.html"> 
@@ -70,7 +70,7 @@
     <!-- Form Section -->
     <div class="wrapper"> 
         <!-- main title -->
-        <div class="main-title position-relative">
+        <div class="main-title position-relative ">
             <h1 class="text-center fw-bold">تسجيل الدكتور</h1>
         </div>
     <div class="container d-flex justify-content-center align-items-center mt-5 main-div">
@@ -82,7 +82,7 @@
             <div class="form-container">
                 <form class="row g-3">
                     <div class="col-md-12">
-                        <label for="exampleFormControlSelect1">التخصص</label>
+                        <label for="exampleFormControlSelect1" >التخصص <span style="color:red">*</span></label>
                         <select class="form-control" id="exampleFormControlSelect1" >
                             <option>اختيار التخصص</option>
                             <option>أسنان</option>
@@ -103,16 +103,16 @@
                             </select>
                     </div>
                     <div class="col-md-12">
-                        <label for="education" class="form-label" >التعليم</label>
+                        <label for="education" class="form-label star" >التعليم</label>
                         <input type="text" class="form-control" id="education">
                     </div>
                     <div class="col-md-12">
-                        <label for="exampleFormControlTextarea1" class="form-label" >الخبرات</label>
+                        <label for="exampleFormControlTextarea1" class="form-label star" >الخبرات</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="50"></textarea>
                     </div>
                     <div class="row g-3"> 
                         <div class="col-md-3">
-                            <label for="exampleFormControlTextarea1" class="form-label" >ايام العمل</label>
+                            <label for="exampleFormControlTextarea1" class="form-label star" >ايام العمل</label>
                             <div class="dropdown form-control">
                             <button class="btn btn-defult dropdown-toggle dropdown-toggle-split" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span>
                             اختيار الايام
@@ -178,15 +178,15 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <label for="text1" class="form-label">من</label>
+                            <label for="text1" class="form-label star">من </label>
                             <input id="time" class="form-control" type="time" name="time" value="13:30" />
                         </div>
                         <div class="col-md-3">
-                            <label for="text1" class="form-label" >الي</label>
+                            <label for="text1" class="form-label star" >الي</label>
                             <input id="time" class="form-control" type="time" name="time" value="13:30" />
                         </div>
                         <div class="col-md-3">
-                            <label for="watingTime" class="form-label"> مدة الانتظار</label>
+                            <label for="watingTime" class="form-label star"> مدة الانتظار </label>
                             <input type="number" class="form-control" id="watingTime">
                         </div>
                         
@@ -194,12 +194,12 @@
                     
                         <div class="row g-3 hours">
                             <div class="col-md-4">
-                                <label for="price" class="form-label" >سعر الكشف</label>
+                                <label for="price" class="form-label star" >سعر الكشف </label>
                                 <input type="number" class="form-control" id="price">
                             </div>
                             
                             <div class="col-md-4 check-box mt-4 pe-lg-5 "dir="rtl">
-                                <p style=font-weight:bold; >كشف طوارئ</p>
+                                <p style=font-weight:bold; class="star" >كشف طوارئ </p>
                                 <div class="check d-flex">
                                         <input type="radio" id="Gender1" name="Gender" >
                                         <label for="Gender1">يوجد</label>
@@ -207,7 +207,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <label for="price" class="form-label" >سعر كشف الطوارئ</label>
+                                <label for="price" class="form-label "  >سعر كشف الطوارئ</label>
                                 <input type="number" class="form-control" id="price">
                             </div>
                         </div>
