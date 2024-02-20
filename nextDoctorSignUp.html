@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
 </head>
 <body> 
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark active" id="nav" >
         <div class="container-fluid" style="flex-direction: row-reverse;">
@@ -111,10 +110,10 @@
                         <label for="exampleFormControlTextarea1" class="form-label" >الخبرات</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="50"></textarea>
                     </div>
-                    
-                    <div class="col-md-12">
-                        <label for="exampleFormControlTextarea1" class="form-label" >ايام العمل</label>
-                        <div class="dropdown form-control">
+                    <div class="row g-3"> 
+                        <div class="col-md-3">
+                            <label for="exampleFormControlTextarea1" class="form-label" >ايام العمل</label>
+                            <div class="dropdown form-control">
                             <button class="btn btn-defult dropdown-toggle dropdown-toggle-split" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span>
                             اختيار الايام
                             </button>
@@ -176,20 +175,43 @@
                                     </a>
                                 </li>
                             </ul>
+                            </div>
                         </div>
+                        <div class="col-md-3">
+                            <label for="text1" class="form-label">من</label>
+                            <input id="time" class="form-control" type="time" name="time" value="13:30" />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="text1" class="form-label" >الي</label>
+                            <input id="time" class="form-control" type="time" name="time" value="13:30" />
+                        </div>
+                        <div class="col-md-3">
+                            <label for="watingTime" class="form-label"> مدة الانتظار</label>
+                            <input type="number" class="form-control" id="watingTime">
+                        </div>
+                        
                     </div>
-                    <div class="col-md-12">
+                    
                         <div class="row g-3 hours">
-                            <div class="col-md-6">
-                                <label for="text1" class="form-label" >الي</label>
-                                <input id="time" class="form-control" type="time" name="time" value="13:30" />
+                            <div class="col-md-4">
+                                <label for="price" class="form-label" >سعر الكشف</label>
+                                <input type="number" class="form-control" id="price">
                             </div>
-                            <div class="col-md-6">
-                                <label for="text1" class="form-label">من</label>
-                                <input id="time" class="form-control" type="time" name="time" value="13:30" />
+                            
+                            <div class="col-md-4 check-box mt-4 pe-5 "dir="rtl">
+                                <p style=font-weight:bold; >كشف طوارئ</p>
+                                <div class="check d-flex">
+                                        <input type="radio" id="Gender1" name="Gender" >
+                                        <label for="Gender1">يوجد</label>
+                                        <input type="radio" id="Gender2" name="Gender" class="mr-4"><label for="Gender2">لايوجد</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="price" class="form-label" >سعر كشف الطوارئ</label>
+                                <input type="number" class="form-control" id="price">
                             </div>
                         </div>
-                    </div></div>
+                    
                     <div class= "mb-3 submit-btn text-center">
                         <a href=""><button > تسجيل</button></a>
                     </div>   
