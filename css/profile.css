@@ -141,35 +141,6 @@ textarea {
   align-items: center;
 }
 
-.logos {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 50px;
-}
-
-.logo {
-  text-decoration: none;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border: 1px solid #555;
-  border-radius: 51%;
-  transition: all 0.3s;
-}
-
-.logo:hover {
-  background-color: #168a7f;
-  .fa-brands {
-    color: #fff;
-  }
-}
-
-.fa-brands {
-  color: #555;
-}
 
 .urgent:link,
 .urgent:visited {
