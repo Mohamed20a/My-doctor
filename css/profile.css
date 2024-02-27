@@ -91,6 +91,26 @@ textarea:focus {
   box-shadow: 0 0 0 0.4rem hsla(174, 72%, 31%, 0.5);
 }
 
+.gender {
+  display: flex;
+  gap: 14px;
+}
+
+.gender-text {
+  color: #168a7f;
+  font-weight: bold;
+}
+
+.gender-feild {
+  display: flex;
+  gap: 20px;
+  /* padding: 10px; */
+  width: calc(100% / 2);
+  /* border: 1px solid #7d7c8366; */
+  border-radius: 5px;
+  align-items: center;
+}
+
 .input-feild {
   display: flex;
   gap: 30px;
@@ -101,9 +121,14 @@ textarea {
   width: calc((200px * 2) + 30px);
   border: 1px solid #7d7c8366;
   width: 100%;
+  padding: 10px 10px 0 0;
   margin-bottom: 10px;
   border-radius: 5px;
 }
+
+/* textarea::placeholder {
+  margin-right: 200px;
+} */
 
 .btn {
   background-color: #168a7f;
@@ -113,6 +138,7 @@ textarea {
   border: none;
   border-radius: 4px;
   transition: all 0.3s;
+  width: 160px;
 }
 
 .btn:hover,
@@ -123,7 +149,7 @@ textarea {
 
 .button-holder {
   text-align: center;
-  margin-bottom: 50px;
+  margin: 5px 0 50px 0;
 }
 
 .dr-img {

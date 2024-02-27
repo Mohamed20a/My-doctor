@@ -151,19 +151,32 @@
               dir="rtl"
               class="user-input"
             />
-            <select type="text" class="user-input">
-              <optgroup label="النوع">
-                <!-- <option value="">--النوع--</option> -->
-                <option value="dog">ذكر</option>
-                <option value="cat">انثي</option>
-              </optgroup>
-            </select>
+            <input type="date" placeholder="اليوم" class="user-input" />
           </div>
           <div class="input-feild">
-            <input type="date" placeholder="اليوم" class="user-input" />
             <input type="time" placeholder="الوقت" class="user-input" />
+            <div class="gender-feild">
+              <label class="gender-text">النوع:</label>
+              <div class="gender">
+                <div class="male-container">
+                  <input type="radio" name="gender" value="male" id="male" />
+                  <label for="male">ذكر</label>
+                </div>
+
+                <div class="female-container">
+                  <input
+                    type="radio"
+                    name="gender"
+                    value="female"
+                    id="female"
+                  />
+                  <label for="female">انثي</label>
+                </div>
+              </div>
+            </div>
           </div>
           <textarea
+            class="msg"
             placeholder="رسالة"
             name=""
             id=""

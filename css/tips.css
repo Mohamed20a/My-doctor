@@ -11,10 +11,10 @@ body {
   font-size: 100%;
 }
 
-.navbar{
+.navbar {
   direction: rtl !important;
 }
-.main-title{
+.main-title {
   margin: 5em 0 0;
 }
 
@@ -50,10 +50,12 @@ body {
   line-height: 1.5;
   color: #1d8564;
   text-align: center;
+  margin-bottom: 0;
 }
 
 blockquote {
   padding: 0 50px;
+  margin: 0 !important;
 }
 
 /* CONTROLS */
