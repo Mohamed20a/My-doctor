@@ -102,6 +102,7 @@ textarea {
   border: 1px solid #7d7c8366;
   width: 100%;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 
 .btn {
@@ -127,6 +128,7 @@ textarea {
 
 .dr-img {
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .contacts {
@@ -140,7 +142,6 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
-
 
 .urgent:link,
 .urgent:visited {
