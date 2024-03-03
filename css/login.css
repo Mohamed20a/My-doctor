@@ -146,6 +146,9 @@ textarea {
 .submit-btn p a:hover{
     color: var(--hover-color);
 }
+.previous-btn{
+    background-color: red !important;
+}
 .dropdown {
     direction: rtl;
     height: 38.1px;
