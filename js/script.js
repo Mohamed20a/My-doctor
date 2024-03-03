@@ -99,19 +99,3 @@ let choices = [
         scrollBtn.classList.add('active') :
         scrollBtn.classList.remove('active'); 
     }
-
-
-    // Form One
-    function nextStep() {
-
-        document.getElementById('step1').style.display = 'none';
-
-        document.getElementById('step2').style.display = 'block';
-    }
-    // Form Tow
-    function previousStep() {
-
-        document.getElementById('step2').style.display = 'none';
-
-        document.getElementById('step1').style.display = 'block';
-    }

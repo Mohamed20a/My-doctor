@@ -23,7 +23,7 @@
 <body> 
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark active" id="nav" style="direction: ltr;" >
+    <nav class="navbar navbar-expand-lg navbar-dark active" id="nav" style="direction: ltr;">
         <div class="container-fluid" style="flex-direction: row-reverse;">
         <a class="navbar-brand" href="#">
             <img src="img/logo-w.png" alt="" srcset="">
@@ -37,7 +37,7 @@
                 </svg>
             </label>
         </button>
-            <div class="collapse navbar-collapse active" id="navbarSupportedContent"  >
+            <div class="collapse navbar-collapse active" id="navbarSupportedContent" >
                 <ul class="navbar-nav ml-auto " >
                     <li class="nav-item">
                         <a href="signUpPatient.html"> 
@@ -70,214 +70,68 @@
     </nav>
 
     <!-- Form Section -->
-    <div class="wrapper">
-        <div class="container d-flex justify-content-center align-items-center mt-5 main-div">
-            <div class="min-div">
-                <div class="head text-center">
-                    <h1>التسجيل</h1>
-                    <p> معلومات الدكتور </p>
-                </div>
-                <div class="form-container" id="regForm">
-
-                    <!-- First Form -->
-                    <div id="step1" class="step">
-                    <form class="row g-3" action="" method="post">
+    <div class="wrapper"> 
+        <!-- main title -->
+        <div class="main-title position-relative">
+            <h1 class="text-center fw-bold">تسجيل الدكتور</h1>
+        </div>
+    <div class="container d-flex justify-content-center align-items-center mt-5 main-div">
+        <div class="min-div">
+            <div class="head text-center">
+                <h1>التسجيل</h1>
+                <p> معلومات الدكتور </p>
+            </div>
+            <div class="form-container">
+                <form class="row g-3">
                         <div class="col-md-12 pr-0">
-                            <label for="LastName" class="form-label star" >الاسم</label>
-                            <input type="LastName" class="form-control" id="LastName">
+                        <label for="LastName" class="form-label star" >الاسم</label>
+                        <input type="LastName" class="form-control" id="LastName">
                         </div>
-                        <div class="col-md-12">
-                            <label for="inputEmail4" class="form-label star">البريد الإلكتروني</label>
-                            <input type="email" class="form-control" id="inputEmail4">
+                    <div class="col-md-12">
+                        <label for="inputEmail4" class="form-label star">البريد الإلكتروني</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="inputPassword4" class="form-label star">كلمه المرور</label>
+                        <input type="password" class="form-control" id="inputPassword4">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="formMobile" class="form-label star">رقم الموبايل</label>
+                        <input class="form-control" type="tel" id="formMobile" placeholder="">
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                                <label for="formFile" class="form-label star">الكارنيه</label>
+                                <input class="form-control" type="file" id="formFile">
                         </div>
-                        <div class="col-md-12">
-                            <label for="inputPassword4" class="form-label star">كلمه المرور</label>
-                            <input type="password" class="form-control" id="inputPassword4">
-                        </div>
-                        <div class="col-md-12">
-                            <label for="formMobile" class="form-label star">رقم الموبايل</label>
-                            <input class="form-control" type="tel" id="formMobile" placeholder="">
-                        </div>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                    <label for="formFile" class="form-label star">الكارنيه</label>
-                                    <input class="form-control" type="file" id="formFile">
-                            </div>
-                            <div class="col-md-6 check-box mt-4 pe-5"dir="rtl">
-                                <p style=font-weight:bold; class="star">النوع</p>
-                                <div class="check d-flex">
-
-
+                        <div class="col-md-6 check-box mt-4 pe-5"dir="rtl">
+                            <p style=font-weight:bold; class="star">النوع</p>
+                            <div class="check d-flex">
+                                
+                                    
                                     <input type="radio" id="Gender1" name="Gender" >
                                     <label for="Gender1">ذكر</label>
-
-                                    <input type="radio" id="Gender2" name="Gender" class="mr-4">
-                                    <label for="Gender2">انثي</label>
-
-                                </div>
+                                
+                                
+                                    <input type="radio" id="Gender2" name="Gender" class="mr-4"><label for="Gender2">انثي</label>
+                                
                             </div>
                         </div>
-                        <div class= "mb-3 next-but text-center">
-                            <button type="button" onclick="nextStep()">التالي</button>
-                            <p>هل لديك حساب؟ <span><a href="./logInDoctor.html">دخول</a></span></p>
-                        </div>
-                    </form>
                     </div>
-
-                    <!-- Second Form -->
-                    <div id="step2" class="step" style="display: none;">
-                    <form class="row g-3" action="" method="post">
-                        <div class="col-md-12">
-                            <label for="exampleFormControlSelect1" >التخصص <span style="color:red">*</span></label>
-                            <select class="form-control" id="exampleFormControlSelect1" >
-                                <option>اختيار التخصص</option>
-                                <option>أسنان</option>
-                                <option>عيون</option>
-                                <option>جراحة</option>
-                                <option>باطنة</option>
-                                <option>جلدية</option>
-                                <option>قلب وأوعية دموية</option>
-                                <option>مخ وأعصاب</option>
-                                <option>صدر</option>
-                                <option>أطفال</option>
-                                <option>نسا وتوليد</option>
-                                <option>أورام</option>
-                                <option>أنف وأذن وحنجرة</option>
-                                <option>كلي</option>
-                                <option>عظام</option>
-                                <option>علاج طبيعي</option>
-                                </select>
-                        </div>
-
-                        <div class="col-md-12">
-                            <label for="education" class="form-label star" >التعليم</label>
-                            <input type="text" class="form-control" id="education">
-                        </div>
-
-                        <div class="col-md-12">
-                            <label for="exampleFormControlTextarea1" class="form-label star" >الخبرات</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" cols="50"></textarea>
-                        </div>
-
-                        <div class="row g-3"> 
-                            <div class="col-md-3">
-                                <label for="exampleFormControlTextarea1" class="form-label star" >ايام العمل</label>
-                                <div class="dropdown form-control">
-                                <button class="btn btn-defult dropdown-toggle dropdown-toggle-split" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span>
-                                اختيار الايام
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="Checkme1" />
-                                                <label class="form-check-label" for="Checkme1">السبت</label>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="Checkme2" checked />
-                                                <label class="form-check-label" for="Checkme2">الاحد</label>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="Checkme3" />
-                                                <label class="form-check-label" for="Checkme3">الاثنين</label>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="Checkme4" checked />
-                                                <label class="form-check-label" for="Checkme4">الثلاثاء</label>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="Checkme4" checked />
-                                                <label class="form-check-label" for="Checkme4">الاربعاء</label>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="Checkme4" checked />
-                                                <label class="form-check-label" for="Checkme4">الخميس</label>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="#">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="Checkme4" checked />
-                                                <label class="form-check-label" for="Checkme4">الجمعه</label>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="text1" class="form-label star">من </label>
-                                <input id="time" class="form-control" type="time" name="time" value="13:30" />
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="text1" class="form-label star" >الي</label>
-                                <input id="time" class="form-control" type="time" name="time" value="13:30" />
-                            </div>
-
-                            <div class="col-md-3">
-                                <label for="watingTime" class="form-label star"> مدة الانتظار </label>
-                                <input type="number" class="form-control" id="watingTime">
-                            </div>
-
-                        </div>
-
-                        <div class="row g-3 hours">
-                                <div class="col-md-4">
-                                    <label for="price" class="form-label star" >سعر الكشف </label>
-                                    <input type="number" class="form-control" id="price">
-                                </div>
-
-                                <div class="col-md-4 check-box mt-4 pe-lg-5 "dir="rtl">
-                                    <p style=font-weight:bold; class="star" >كشف طوارئ </p>
-                                    <div class="check d-flex">
-                                            <input type="radio" id="Gender1" name="Gender" >
-                                            <label for="Gender1">يوجد</label>
-                                            <input type="radio" id="Gender2" name="Gender" class="mr-4"><label for="Gender2">لايوجد</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="price" class="form-label "  >سعر كشف الطوارئ</label>
-                                    <input type="number" class="form-control" id="price">
-                                </div>
-                        </div>
-
-                        <div class= "mb-3 submit-btn text-center">
-                            <button onclick="previousStep()" class="previous-btn">السابق</button>
-                            <button type="submit"> تسجيل</button>
-                        </div>
-                    </form>
+                    <div class= "mb-3 next-but text-center">
+                        <a href="./nextDoctorSignUp.html"><button type="button">التالي</button></a>
+                        <p>هل لديك حساب؟ <span><a href="./logInDoctor.html">دخول</a></span></p>
                     </div>
-
-                </div>    
-            </div>
+                </form>
+            </div>    
         </div>
     </div>
+    </div>
 
-    <script src="js/script.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <!-- <script src="js/all.min.js"></script> -->
 </body>
 </html>
