@@ -88,7 +88,7 @@ body {
 .user-input:focus,
 textarea:focus {
   outline: none;
-  box-shadow: 0 0 0 0.4rem hsla(174, 72%, 31%, 0.5);
+  box-shadow: 0 0 0 0.1rem hsla(174, 72%, 31%, 0.5);
 }
 
 .gender {
